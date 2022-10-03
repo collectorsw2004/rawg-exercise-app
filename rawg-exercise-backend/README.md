@@ -12,9 +12,9 @@ API developed using:
 
 You're here because you aren't running Docker. 
 
-First you need to install NodeJS. You can find your installer [HERE](https://nodejs.org/es/download/).
+First, if not already installed, you'll need to install NodeJS. You can find your installer [HERE](https://nodejs.org/es/download/).
 
-Then, you need to run some ``NPM`` commands to get the backend running:
+Then, go to  *"/rawg-exercise-backend"* directory;  you'll need to run some ``NPM`` commands to get the backend running:
 
 
 ```
@@ -22,6 +22,8 @@ npm install
 npm start
 ```
 That's it! Backend should be running now.
+
+By default, at http://localhost:9000
 
 **NOTE:** For development environment, livereload is implemented with [nodemon](https://nodemon.io).
 Run one of the following scripts, according to your OS:

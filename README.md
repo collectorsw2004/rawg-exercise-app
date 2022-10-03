@@ -20,7 +20,9 @@ With Docker, you can have everything running in few steps:
 First, download and install Docker version for your OS. 
 You can find Docker setup instructions [HERE](https://docs.docker.com/engine/install/)
 
-Open your terminal, go to project root path and run `docker compose up` command. This will create and start containers for both BACKEND and WEB APP.
+**NOTE**: you must enable Virtualization Technology in order to start Docker daemon.
+
+Once Docker is running, open your terminal, go to project root path and run `docker compose up` command. This will create and start containers for both BACKEND and WEB APP.
 
 Containers run `node:16` image.
 

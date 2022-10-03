@@ -56,11 +56,11 @@ BODY:  {
        }
 ```
 
-### `/games?search=`
+### `/videogames?search=`
 Shows all games with title matching your query. Use **query params** 
 to make a search, as following:
 
-`/games?search=diablo`
+`/videogames?search=diablo`
 
 The query will return JSON response:
 ``` 
@@ -91,7 +91,7 @@ This API takes advantage of NPM module ``node-cache`` to help implementing **In-
 That means that if you perform the same query for a second time, response time will
 be far shorter!
 
-##API Docs
+## API Docs
 
 - [MD version](APIDOCS.md)
 - HTML version: `/docs` folder

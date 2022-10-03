@@ -1,0 +1,31 @@
+{
+  "name": "rawg-exercise-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev:windows": "node bin/www && nodemon .",
+    "dev:linux":"node bin/www && nodemon .",
+    "dev:osx": "node bin/www & nodemon .",
+    "generate:docs:html": "jsdoc -d docs -r src",
+    "generate:docs:md": "jsdoc2md src/**/*.js > APIDOCS.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.2",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "node-cache": "^5.1.2",
+    "qs": "^6.11.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.11",
+    "jsdoc-to-markdown": "^7.1.1",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,13 @@
+<div class="root-container">
+  <div class="root-header">
+    <h1>
+      MyRAWG WEB SEARCH
+    </h1>
+  </div>
+
+  <search-div (sEvent)="search($event)">
+  </search-div>
+  <app-display
+    [games$]="games$"
+  ></app-display>
+</div>

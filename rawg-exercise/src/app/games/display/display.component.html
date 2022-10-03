@@ -1,0 +1,19 @@
+<div *ngIf="games$ | async as games; else indicator" class="flex-container">
+  <div *ngFor="let game of games">
+    <figure class="figure">
+      <img class="" [src]="game.b_img"/>
+      <figcaption>
+        <div class="fig-title">{{ game.title }}</div>
+        <div class="fig-author">Release date: {{ game.r_date }}</div>
+      </figcaption>
+    </figure>
+
+  </div>
+</div>
+
+<ng-template #indicator>
+  <div class="empty-state">
+    <img src="../../../assets/img/pacman.gif"/>
+    <h3>Looking for something....?</h3>
+  </div>
+</ng-template>

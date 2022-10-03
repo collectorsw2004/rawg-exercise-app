@@ -1,0 +1,24 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./rawg-exercise-backend
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    container_name: rawg-exercise-backend
+    volumes:
+       - ./rawg-exercise-backend:/usr/src/app/api
+       - /usr/src/app/api/node_modules
+    env_file:
+      - ./rawg-exercise-backend/.env
+  web:
+    build:
+      context: ./rawg-exercise
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    container_name: rawg-exercise-webapp
+    volumes:
+       - ./rawg-exercise:/usr/src/app/web
+       - /usr/src/app/web/node_modules
